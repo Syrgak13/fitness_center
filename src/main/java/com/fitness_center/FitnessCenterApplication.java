@@ -1,22 +1,13 @@
 package com.fitness_center;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import jakarta.persistence.*;
-import lombok.*;
-
-@Entity
-@Data
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
+@SpringBootApplication
 public class FitnessCenterApplication {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    public static void main(String[] args) {
+        SpringApplication.run(FitnessCenterApplication.class, args);
+    }
 
-    private String name;
-    private String location;
-    private String phone;
-    private String email;
 }
