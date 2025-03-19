@@ -14,5 +14,7 @@ public interface EventServiceImpl {
 
     EventDto updateEvent (EventDto eventDto);
 
+    EventDto updateEvent(Long id, EventDto eventDto);
+
     EventDto deleteEvent (Long id);
 }

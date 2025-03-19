@@ -47,6 +47,11 @@ public class EventService implements EventServiceImpl {
 
     @Override
     public EventDto updateEvent(EventDto eventDto) {
+        return null;
+    }
+
+    @Override
+    public EventDto updateEvent(Long id, EventDto eventDto) {
         Event existingEvent = eventRepository.findById(eventDto.getId()).orElseThrow(() -> new RuntimeException("Event not found"));
         existingEvent.setTitle(eventDto.getTitle());
         Event updatedEvent = eventRepository.save(existingEvent);
