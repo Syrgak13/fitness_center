@@ -4,7 +4,8 @@ package com.fitness_center.entities;
 
 import jakarta.persistence.*;
 import lombok.*;
-import java.time.LocalDate;
+
+import java.util.Date;
 
 @Entity
 @Data
@@ -19,6 +20,6 @@ public class Subscription {
 
     private String type; // Месячный, годовой
     private double price;
-    private LocalDate startDate;
-    private LocalDate endDate;
+    private String startDate;
+    private String endDate;
 }

@@ -19,7 +19,7 @@ public class Event {
 
     private String title;
     private String description;
-    private LocalDateTime dateTime;
+    private String dateTime;
     private String location;
     private int maxParticipants;
 
