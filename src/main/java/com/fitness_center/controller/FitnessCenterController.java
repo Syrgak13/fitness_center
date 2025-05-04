@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/fitness-centers")
+@RequestMapping("/auth/oauth2/success")
 @RequiredArgsConstructor
 public class FitnessCenterController {
 
